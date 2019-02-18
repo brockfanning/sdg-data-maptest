@@ -132,6 +132,16 @@ prose:
             element: hidden
             label: "Metadata last updated"
             scope: national
+      - name: "tags"
+        field:
+            element: multiselect
+            label: "Tags"
+            options:
+              - name: 'National'
+                value: 'National'
+              - name: 'Another tag'
+                value: 'Another tag'
+            scope: national
        ######### Data Info #########
       - name: "reporting_status"
         field:
@@ -144,16 +154,6 @@ prose:
                 value: 'inprogress'
               - name: 'complete'
                 value: 'complete'
-            scope: data
-      - name: "tags"
-        field:
-            element: multiselect
-            label: "Tags"
-            options:
-              - name: 'National'
-                value: 'National'
-              - name: 'Another tag'
-                value: 'Another tag'
             scope: data
       - name: data_non_statistical
         field:
