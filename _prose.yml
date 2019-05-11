@@ -42,6 +42,7 @@ prose:
             scope: global
       - name: "target"
         field:
+            required: true
             element: text
             label: "Target name"
             scope: global
